@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <style>
+            #div1{
+
+                /* background-color: rgb(222, 203, 203); */
+                width: 300px;
+                height: 420px;
+                margin-left: 450PX;
+                margin-top: 100px;
+                
+                border-end-end-radius: 3px;
+                border-color: rgb(121, 116, 116);
+                border-radius: 8px;
+
+                /* width: 300px; */
+                /* height: 100px; */
+                padding: 15px;
+                background-color: rgb(125, 120, 120);
+                box-shadow: 10px 10px;
+            
+            }
+            #div2{
+                /* align: center; */
+                margin: 18px 18px;
+            }
+            #tbl1{
+                color: aqua;
+                
+                margin-left: 18px;
+                width: 240px;
+            }
+
+
+        </style>
+        
+        <link rel="stylesheet" href="calcstyle.css">
+
+    </head>
+    <body style="background-color: rgb(28, 27, 27);">
+        
+        <div id="div1" ">
+
+            <form action="">
+                <div id="div2">
+                    <img src="" alt="" srcset="">
+                    <h1>Standard</h1>
+                    <img src="" alt="">
+                    <img src="" alt="">
+
+
+                    <textarea name="" id="text" cols="18" rows="2"
+                     style="background-color: rgb(35, 34, 34);
+                     border-radius: 8px;
+                     box-shadow: 5px 5px;
+                     font-style:white;
+                     font-family:'Times New Roman', Times, serif ;
+                     font-size: 25px;" placeholder="0"></textarea>
+
+                </div>
+                
+        
+                <table id="tbl1"align="centre" border="0">
+                    
+                <tr>
+                    <td><input id="b1" type="button" value="AC"onclick="aclear()"></td>
+                    <td><input  id="b10"type="button" value="/"onclick="display('/')"></td>
+                    
+                    <td><input id="b3" type="button" value="%" onclick="display('%')"></td>
+                    <td><input id="b2" type="button" value="BACK"></td>
+                </tr>
+
+                <tr>
+                    <td><input id="bb1" type="button" value="7" onclick="display(7)"></td>
+                    <td><input id="bb2"type="button" value="8" onclick="display(8)"></td>
+                    <td><input id="bb3"type="button" value="9" onclick="display(9)"></td>
+
+                    <td><input id="b4"type="button" value="x"onclick="display('*')"></td>
+            
+                </tr>
+                <tr>
+
+                    <td><input id="bb4"type="button" value="4"onclick="display(4)"></td>
+                    <td><input id="bb5"type="button" value="5"onclick="display(5)"></td>
+                    <td><input id="bb6" type="button" value="6"onclick="display(6)"></td>
+
+                    <td><input id="b5"type="button" value="-"onclick="display('-')"></td>
+                </tr>
+                <tr>
+
+                <td><input  id="bb7"type="button" value="1"onclick="display(1)"></td>
+                <td><input id="bb8"type="button" value="2"onclick="display(2)"></td>
+                <td><input id="bb9"type="button" value="3"onclick="display(3)"></td>
+
+                <td><input id="b6" type="button" value="+"onclick="display('+')"></td>
+
+                </tr>
+
+                <tr>
+                    <td><input id="b7" type="button" value="+/-" onclick="display('+')"></td>
+
+                    <td><input id="bb10" id="bb1"type="button" value="0" onclick="display('0')"></td>
+                    <td><input id="bb11" id="bb8"type="button" value="."onclick="display('.')"></td>
+                    <td><input id="beq"type="button" value="="onclick="result(text.value)"></td>
+                </tr>
+                
+                
+                
+
+                
+    
+                <script src="actions.js"></script>
+            </table>
+            </form>
+        </div>
+
+    </body>
+</html>
